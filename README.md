@@ -66,7 +66,7 @@ If this repo is helpful for your research, please consider citing the paper:
 ```BibTeX
 
 @article{eckd2026,
-  title={Error Correction Knowledge Distillation from a Dual Perspective},
+  title={ECKD: Error Correction Knowledge Distillation from a Dual Perspective},
   author={Yu Wang, Minqi Li, Kaibing Zhang, Xiangjian He, Xiaomin Ma},
   journal={},
   volume={},
