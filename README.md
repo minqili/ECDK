@@ -54,9 +54,6 @@ The weights of student models are available at [Baidu](https://pan.baidu.com/s/1
 # Acknowledgement
 Thanks for the contributions to the codebase. The code is built on [mdistiller](<https://github.com/megvii-research/mdistiller>) and [mlkd](<https://github.com/Jin-Ying/Multi-Level-Logit-Distillation>).
 
-# Contact
-
-Yu Wang: 230421103.stu.xpu.edu.cn
 
 # Citation
 
