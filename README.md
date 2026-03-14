@@ -1,10 +1,9 @@
-## ECKD: Error Correction Knowledge Distillation from a Dual Perspective
+## Dual-Perspective Error Correction for Enhanced Knowledge Distillation in Deep Learning
 
 
 ### Abstract
 
-Logit-based distillation represents a powerful paradigm for knowledge transfer, where a student learns from a teacher’s high-dimensional logit distribution. However,  teachers are not infallible: despite achieving strong overall accuracy, their predictions remain imperfect on standard benchmarks, and the resulting logits  may  be biased for some samples. When  these  biased teacher logits conflict with ground-truth labels,
-			the student can be misled, injecting noise  into the learning process and creating conflicts between the distillation loss and the cross-entropy loss. Most existing approaches implicitly treat the teacher as a perfectly trustworthy oracle, thereby allowing its errors to contaminate the distillation signal. In this paper, we  provides a new perspective to address this limitation by proposing Error-Correcting Knowledge Distillation (ECKD), a framework that integrates two complementary interventions designed to mitigate the impact of teacher bias. First, probability calibration adjusts the teacher’s predictive distribution using the ground-truth labels to mitigate misleading supervision. Second, a dual-view data selection strategy filters out samples with large prediction bias, reducing the impact of erroneous teacher guidance. The complementary interventions effectively addresses overconfidence issues of teach model in logit-based distillation method. Extensive experiments on CIFAR-100, Tiny-ImageNet, and ImageNet-1K show that ECKD achieves highly competitive performance, consistently matching or exceeding the accuracy of prior knowledge distillation methods across various settings.
+Deep neural networks have achieved remarkable success across various computer vision tasks, yet their deployment in resource-constrained environments remains challenging due to computational and memory costs. Knowledge distillation (KD) offers a promising solution by transferring knowledge from a large teacher model to a compact student model. However, teacher models, despite their high accuracy, can produce biased predictions, leading to misleading supervision. To address this, we introduce Error-Correcting Knowledge Distillation (ECKD), a framework that integrates probability calibration and a dual-view data selection strategy. Probability calibration adjusts the teacher's predictive distribution using ground-truth labels to mitigate misleading supervision, while the dual-view data selection strategy filters out samples with large prediction bias. Extensive experiments on CIFAR-100, Tiny-ImageNet, and ImageNet-1K demonstrate that ECKD achieves highly competitive performance, consistently matching or exceeding the accuracy of prior KD methods.
 
 ### Installation
 
@@ -66,7 +65,7 @@ If this repo is helpful for your research, please consider citing the paper:
 ```BibTeX
 
 @article{eckd2026,
-  title={ECKD: Error Correction Knowledge Distillation from a Dual Perspective},
+  title={Dual-Perspective Error Correction for Enhanced Knowledge Distillation in Deep Learning},
   author={Yu Wang, Minqi Li, Kaibing Zhang, Xiangjian He, Xiaomin Ma},
   journal={},
   volume={},
